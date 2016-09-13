@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ja" class="html">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<link rel="stylesheet" type="text/css" href="./css/reset.css">
+<link rel="stylesheet" type="text/css" href="./css/style.css">
+    
+<title>CARD 登録</title>
+
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="./jquery/jquery.js"></script>
+
+</head>
+    
+<body>
+    
+<div class="box_0">
+<div class="box_1">
+    
+<form action="input.php" method="post">
+    
+    <!--"ダイアログ表示時入力をブロック"-->
+    <div class="form_block"></div>
+    
+    <div class="form_box">
+        
+        <!--"データ入力時のメッセージ"-->
+        <div class="input_box_1">
+
+            <h1 class="input">CARDデータ 登録</h1>
+
+            <br />
+            <br />
+            <br />
+
+        </div><!--"input_box_1"-->
+
+        <!--"ダイアログ表示時のメッセージ"-->
+        <div class="dialog_box_1">
+
+            <h1>登録確認</h1>
+
+            <br />
+            <p>以下のデータを登録してよろしいですか？</p>
+            <br />
+
+        </div><!--"dialog_box_1"-->
+
+        <h3>カードレアリティ：（１～５以内）</h3>
+        <select class="card_rarity" type="text" name="card_rarity" >
+
+            <option class="rarity_list_0" value="0">レアリティ選択</option>
+            <option class="rarity_list_1" value="1">１：コモン</option>
+            <option class="rarity_list_2" value="2">２：アンコモン</option>
+            <option class="rarity_list_3" value="3">３：レア</option>
+            <option class="rarity_list_4" value="4">４：ミラージュ</option>
+            <option class="rarity_list_5" value="5">５：レジェンド</option>
+
+        </select>
+
+        <br />
+        <br />
+
+        <h3>カード名：（１～２０文字以内）<span class="cn_count">0</span></h3>
+        <input class="card_name" type="text" name="card_name" size="20" value="" />
+        
+        <br />
+        <br />
+
+        <h3>カードシリーズ（１～３以内）</h3>
+        <select class="card_series" type="text" name="card_series" >
+
+            <option class="series_list_0" value="0">シリーズ選択</option>
+            <option class="series_list_1" value="1">１：Aシリーズ</option>
+            <option class="series_list_2" value="2">２：Bシリーズ</option>
+            <option class="series_list_3" value="3">３：Cシリーズ</option>  
+
+        </select>
+
+        <br />
+        <br />
+        <br />
+
+        <p class="not_input">CARDデータを登録する</p>
+        <p class="input_button">CARDデータを登録する</p>
+        
+    </div><!--"form_box"-->
+    
+    <div class="button_box">
+        
+        <input class="submit_button" type="submit" value="データベースに登録する" />
+        <p class="not_submit">データベースに登録する</p>
+        <p class="ng_button">キャンセル</p>
+    
+    </div><!--"button_box"-->
+    
+</form>
+
+</div><!--"box_1"-->
+</div><!--"box_0"-->
+
+</body>
+    
+</html>
